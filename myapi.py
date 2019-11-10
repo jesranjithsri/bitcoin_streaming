@@ -21,7 +21,6 @@ class showTransactions(Resource):
 
 class transactionsCount(Resource):
     def get(self, min_value=None):
-        try:
             keys = r.keys('r*')
             keys.sort()
             dic = {}
